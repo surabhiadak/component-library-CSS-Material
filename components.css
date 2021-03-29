@@ -11,7 +11,8 @@
   --lightgreen: #ECFDF5;
   --red: #EF4444;
   --lightred: #FECACA;
-  --pink:  pink;
+  --lightpink: #FBCFE8;
+  --pink:  #DB2777;
   font-family: 'Playfair Display', serif;
 }
 
@@ -139,7 +140,7 @@ body > main {
     margin: 1em 2em;
     background-color: var(--lightpurple);
     border: 3px solid var(--purple);
-    border-radius: 1em;
+    border-radius: 1rem;
 }
 
 /*Avatar*/
@@ -147,7 +148,7 @@ body > main {
 {
   width: 2rem;
   height: auto;
-  border-radius: 100rem;
+  border-radius: 100em;
   padding: 0.5em;
 }
 .avatar-small 
@@ -211,6 +212,7 @@ body > main {
   background-color: var(--lightgreen);
   margin: 1rem;
   padding: 1rem;
+  border-radius: 0.5rem;
 }
 .primary:hover
 {
@@ -219,13 +221,14 @@ body > main {
 
 .secondary
 {
-  background-color: var(--lightred);
+  background-color: var(--lightpink);
   margin: 1rem;
   padding: 1rem;
+  border-radius: 0.5rem;
 }
 .secondary:hover
 {
-  background-color: var(--red);
+  background-color: var(--pink);
 }
 
 /*Alerts*/
@@ -237,6 +240,7 @@ body > main {
   margin: 1rem;
   text-align: center;
   font-weight: bold;
+  border-radius: 0.5rem;
 }
 
 .success
@@ -247,72 +251,100 @@ body > main {
   margin: 1rem;
   text-align: center;
   font-weight: bold;
+  border-radius: 0.5rem;
 }
 
 .info
 {
-  background-color: #C7D2FE;
+  background-color: var(--lightred);
   border: 1px solid black;
   padding: 1rem;
   margin: 1rem;
   text-align: center;
   font-weight: bold;
+  border-radius: 0.5rem;
 }
 
 .warning
 {
-  background-color: #FDE68A;
+  background-color: var(--pink);
   border: 1px solid black;
   padding: 1rem;
   margin: 1rem;
   text-align: center;
   font-weight: bold;
+  border-radius: 0.5rem;
 }
 
 /*Buttons*/
 .btn-primary
 {
   margin: 0.5rem;
-  padding: 0.5rem;
+  padding: 1rem;
   cursor: pointer;
+  background-color: var(--lightgreen);
+  border-radius: 0.5rem;
+}
+
+.btn-primary:hover
+{
+  background-color: var(--green);
 }
 
 .btn-secondary
 {
   margin: 0.5rem;
-  padding: 0.5rem;
+  padding: 1rem;
   cursor: pointer;
+  background-color: var(--lightpink);
+  border-radius: 0.5rem;
+}
+
+.btn-secondary:hover
+{
+  background-color: var(--pink);
 }
 
 .btn-link
 {
   margin: 0.5rem;
-  padding: 0.5rem;
+  padding: 1rem;
   color: green;
   text-decoration: underline;
   cursor: pointer;
+  border-radius: 0.5rem;
 }
+
+
+.btn-icon
+{
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
 
 .fa-trash
 {
-  margin: 0.5rem;
-  padding: 0.3rem;
+  margin: 0.3rem;
+  /*padding: 0.2rem;*/
 }
 
 .fa-close
 {
-  margin: 0.5rem;
-  padding: 0.3rem;
+  margin: 0.3rem;
+  /*padding: 0.2rem;*/
 }
 
 .btn-action
 {
   margin: 0.5rem;
-  padding: 0.5rem;
+  padding: 1rem;
   background-color: var(--green);
   cursor: pointer;
   transition: 0.4s ease;
   border: 2px solid black;
+  border-radius: 0.5rem;
 }
 
 .btn-action:hover
@@ -481,6 +513,7 @@ body > main {
   margin: 0;
   background-color: var(--purple-2);
   border: 0.5px solid black;
+  border-radius: 0.5rem;
 }
 
 .stacked-list
@@ -490,6 +523,7 @@ body > main {
   margin: 1rem 0;
   background-color: var(--purple-2);
   border: 1px solid black;
+  border-radius: 0.5rem;
 }
 
 /*Toast*/
@@ -505,6 +539,7 @@ body > main {
   padding: 1rem;
   background-color: white;
   color: var(--red);
+  border-radius: 0.5rem;
 }
 
 /**Navigation**/
@@ -514,7 +549,7 @@ body > main {
   border: 1px solid black;
   background-color: var(--purple-2);
   color: black;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 .nav-ul
