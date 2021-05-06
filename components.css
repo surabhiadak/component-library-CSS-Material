@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
 
-
 :root
 {
   --lightpurple: #EDE9FE;
@@ -24,8 +23,8 @@ body
   "nav header"
   "nav main"
   "nav main";
-  grid-template-rows: 100px 2fr;
-  grid-template-columns: 230px 2fr;
+  grid-template-rows: 6.25rem 2fr;
+  grid-template-columns: 14.37rem 2fr;
   overflow-x: hidden;
 }
 
@@ -38,7 +37,7 @@ body > header
   justify-content: center;
   min-width: max-content;
   background-color: var(--lightpurple);
-  margin: 0.5em 15em 1em 0em;
+  margin: 0.5rem 15rem 1rem 0rem;
 }
 
 .header-navigation ul 
@@ -54,7 +53,6 @@ body > header
 
 .header-navigation ul li a
 {
-  /*text-decoration: none;*/
   color: black;
   font-size: larger;
   display: inline;
@@ -136,8 +134,8 @@ body > main {
 /*Container*/
 .container 
 {
-    padding: 1em 2em;
-    margin: 1em 2em;
+    padding: 1rem 2rem;
+    margin: 1rem 2rem;
     background-color: var(--lightpurple);
     border: 3px solid var(--purple);
     border-radius: 1rem;
@@ -148,36 +146,36 @@ body > main {
 {
   width: 2rem;
   height: auto;
-  border-radius: 100em;
-  padding: 0.5em;
+  border-radius: 100rem;
+  padding: 0.5rem;
 }
 .avatar-small 
 {
     width: 3rem;
     height: auto;
-    border-radius: 100em;
-    padding: 0.5em;
+    border-radius: 100rem;
+    padding: 0.5rem;
 }
 .avatar-medium 
 {
     width: 4rem;
     height: auto;
-    border-radius: 100em;
-    padding: 0.5em;
+    border-radius: 100rem;
+    padding: 0.5rem;
 }
 .avatar-large 
 {
     width: 5rem;
     height: auto;
-    border-radius: 100em;
-    padding: 0.5em;
+    border-radius: 100rem;
+    padding: 0.5rem;
 }
 .avatar-extra-large
 {
   width: 6rem;
   height: auto;
-  border-radius: 100em;
-  padding: 0.5em;
+  border-radius: 100rem;
+  padding: 0.5rem;
 }
 
 /*Badges*/
@@ -199,8 +197,8 @@ body > main {
 .badge-red
 {
   position: absolute;
-  left: 35px;
-  bottom: 8px;
+  left: 2rem;
+  bottom: 0.5rem;
   width: 0.8rem;
   height: 0.8rem;
   background-color: var(--red);
@@ -353,13 +351,6 @@ body > main {
 }
 
 /*Cards*/
-
-.row-cards
-{
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .card
 {
     display: flex;
@@ -367,10 +358,38 @@ body > main {
     padding: 1rem;
     border: 1px solid black;
     margin: 1rem;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 9.3rem;
+    max-height: 9.3rem;
 }
 
+.card-overlay
+{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid black;
+  margin: 1rem;
+  max-width: 9.3rem;
+  max-height: 9.3rem;
+  position: relative;
+}
+
+.card-overlay > .img-overlay
+{
+  opacity: 0.7;
+  
+}
+.text-overlay
+{
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+}
+.row-cards
+{
+  display: flex;
+  flex-wrap: wrap;
+}
 .card-badge
 {
     display: flex;
@@ -378,11 +397,9 @@ body > main {
     padding: 1rem;
     border: 1px solid black;
     margin: 1rem;
-    max-width: 150px;
+    max-width: 9.3rem;
     position: relative;
 }
-
-
 .badge-p
 {
   background-color: darkcyan;
@@ -413,40 +430,15 @@ body > main {
   padding: 1rem;
   border: 1px solid black;
   margin: 1rem;
-  max-width: 150px;
+  max-width: 9.3rem;
   position: relative;
 }
-
 .dismiss
 {
   position: absolute;
   top: 1rem;
   right: 1rem; 
   background-color: var(--red);
-}
-
-.card-overlay
-{
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  border: 1px solid black;
-  margin: 1rem;
-  max-width: 150px;
-  max-height: 150px;
-  position: relative;
-}
-
-.card-overlay > .img-overlay
-{
-  opacity: 0.7;
-  
-}
-.text-overlay
-{
-  position: absolute;
-  top: 2rem;
-  left: 4rem;
 }
 
 /*Images*/
@@ -458,16 +450,16 @@ body > main {
 .responsive-img
 {
   width: 100%;
-  max-width: 200px;
-  height: 200px;
+  max-width: 12.5rem;
+  height: 12.5rem;
   margin: 1rem;
 }
 
 .round-img
 {
   width: 100%;
-  max-width: 200px;
-  height: 200px;
+  max-width: 12.5rem;
+  height: 12.5rem;
   border-radius: 50%;
   margin: 1rem;
 }
@@ -479,7 +471,7 @@ body > main {
 }
 .input-textarea
 {
-  font-size: 14px;
+  font-size: 0.8rem;
   outline: none;
   width: 100%;
   resize: none;
@@ -488,13 +480,13 @@ body > main {
   border: 2px solid black;
   border-radius: 0.5rem;
   width: 100%;
-  max-width: 300px;
+  max-width: 18.7rem;
 }
 
 .input-text-error
 {
   border: 2px solid var(--red);
-  font-size: 14px;
+  font-size: 0.8rem;
   width: 100%;
   resize: none;
   padding: 1rem 2rem;
@@ -502,7 +494,7 @@ body > main {
   border: 2px solid var(--red);
   border-radius: 0.5rem;
   width: 100%;
-  max-width: 300px;
+  max-width: 18.7rem;
 }
 
 /*Lists*/
@@ -608,4 +600,20 @@ body > main {
 .underlined
 {
   text-decoration: underline;
+}
+
+
+@media(max-width: 998px)
+{
+    html{
+        font-size: 55%;
+    }
+}
+
+
+@media(max-width: 768px)
+{
+    html{
+        font-size: 45%;
+    }
 }

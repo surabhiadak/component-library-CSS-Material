@@ -23,7 +23,7 @@ body
     height: 80vh;
     color: black;
     font-weight: bold;
-    border: 5px solid var(--purple);
+    /*border: 2px solid var(--purple);*/
     border-radius: 2rem;
 }
 
@@ -39,4 +39,71 @@ body
 .home-btn:hover
 {
     background-color: var(--btn);
+}
+
+/*footer*/
+
+.footer
+{
+    bottom: 0;
+    width: 100%;
+    padding: 3rem;
+    background-color: var(--purple);
+    text-align: center;
+}
+
+.footer .header
+{
+    margin: auto;
+    text-align: center;
+}
+
+.footer-social-links
+{
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer-social-links a
+{
+    width: 50px;
+    height: 50px;
+    line-height: 25px !important;
+    position: relative;
+    margin: 0 5px;
+    text-align: center;
+    display: inline-block;
+    color: #111;
+    transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.0000);
+}
+
+.footer-social-links a:hover
+{
+    color: red;
+}
+
+.footer-social-links a:hover:before
+{
+    background: #111;
+}
+.footer-social-links a i,
+.footer-social-links a span
+{
+    position: relative;
+    top: 2px;
+    left: 1px;
+}
+
+@media(max-width: 998px)
+{
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width: 768px)
+{
+    html{
+        font-size: 45%;
+    }
 }
