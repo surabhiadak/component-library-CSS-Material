@@ -26,12 +26,13 @@ body
   grid-template-rows: 6.25rem 2fr;
   grid-template-columns: 14.37rem 2fr;
   overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 /*Header*/
 body > header 
 {
-  
   grid-area: header;
   display: flex;
   justify-content: center;
@@ -55,8 +56,9 @@ body > header
 {
   color: black;
   font-size: larger;
-  display: inline;
   transition: all 0.2s linear;
+  list-style: none;
+  text-decoration: none;
 }
 
 .header-navigation ul li a:hover
